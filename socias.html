@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<htm lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="socias.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="bx bxs-ghost"></i>
+                        <div class="logo-text">Jenelyn Socias</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="pic.jpeg" alt="pfp">
+                    </div>
+                    <div class="hero-text">
+                        <h5>HI! I'm a <span class="input">Frontend Developer</span></h5>
+                        <h1>Jenelyn Socias</h1>
+                        <p>This is only my trial portfolio. Currently studying this web designing stuff, I'm currently on my 3rd year as a BSCS student.</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://www.linkedin.com/login"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
+        <script>
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+
+            var typed=new Typed(".input",{
+                strings:["Frontend Developer", "Web Developer", "CS Student"],
+                typedSpeed:70,
+                backSpeed:55,
+                loop:true
+            })
+        </script>
+
+    </body>
+</htm>
